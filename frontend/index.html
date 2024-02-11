@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div>
+      <h2>Is your name lucky?</h2>
+      <p>
+        Welcome to the game where we find out whether your name is one of our
+        lucky names of the day. All you have to do is type your name below and
+        we will tell you!
+      </p>
+    </div>
+    <div id="app"></div>
+    <form id="nameForm">
+      <label for="nameInput"></label>
+      <input
+        type="text"
+        id="nameInput"
+        autofocus="autofocus"
+        placeholder="Type your name"
+      />
+      <button type="submit" id="submit" class="btn btn-primary">CHECK</button>
+    </form>
+    <div id="errorDiv" class="bg-secondary"></div>
+    <div id="result" class="bg-accent"></div>
+    <div id="winnersMainDiv" style="display: none">
+      <div class="flex-1">
+        <h2 class="bg-primary">List of Winners</h2>
+        <ul id="winnersList"></ul>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
